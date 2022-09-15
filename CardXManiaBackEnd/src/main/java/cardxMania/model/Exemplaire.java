@@ -31,7 +31,7 @@ public class Exemplaire {
 	private List<Achat> achats;
 	
 	@ManyToOne
-	@JsonView(Views.ViewUser.class)
+	@JsonView(Views.ViewExemplaire.class)
 	private Compte user;
 	
 	@Column(name="en_vente")
